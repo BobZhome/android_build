@@ -149,7 +149,9 @@ PRODUCT_DEVICE := generic
 # ensure this is the default locale.
 PRODUCT_LOCALES = \
 	en_US \
+	es_ES \
 	mdpi
 
 # include available languages for TTS in the system image
 -include external/svox/pico/lang/PicoLangEnUsInSystem.mk
+-include external/svox/pico/lang/PicoLangEsEsInSystem.mk
