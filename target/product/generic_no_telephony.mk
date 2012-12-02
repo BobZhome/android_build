@@ -26,13 +26,10 @@ PRODUCT_PACKAGES := \
     Calendar \
     CertInstaller \
     DrmProvider \
-    Email2 \
-    Exchange2 \
     FusedLocation \
     Gallery2 \
     InputDevices \
     LatinIME \
-    Launcher2 \
     Music \
     Provision \
     Phone \
@@ -71,14 +68,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES := \
         frameworks/av/media/libeffects/data/audio_effects.conf:system/etc/audio_effects.conf
 
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.carrier=unknown
+#PRODUCT_PROPERTY_OVERRIDES += \
+#    ro.carrier=unknown
 
 $(call inherit-product-if-exists, frameworks/base/data/fonts/fonts.mk)
-$(call inherit-product-if-exists, external/cibu-fonts/fonts.mk)
-$(call inherit-product-if-exists, external/lohit-fonts/fonts.mk)
-$(call inherit-product-if-exists, external/naver-fonts/fonts.mk)
-$(call inherit-product-if-exists, frameworks/base/data/keyboards/keyboards.mk)
+#$(call inherit-product-if-exists, external/cibu-fonts/fonts.mk)
+#$(call inherit-product-if-exists, external/lohit-fonts/fonts.mk)
+#$(call inherit-product-if-exists, external/naver-fonts/fonts.mk)
+#$(call inherit-product-if-exists, frameworks/base/data/keyboards/keyboards.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core.mk)
 
 # Overrides
